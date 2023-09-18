@@ -12,7 +12,7 @@ chrome_options.add_argument("--disable-infobars")  # Disable infobars that may a
 chrome_options.add_argument("--disable-extensions")  # Disable extensions
 chrome_options.add_argument("--force-device-scale-factor=1.0")  # Set the initial zoom level
 
-driver = webdriver.Chrome(executable_path=r'C:\browserdriver\chromedriver.exe', options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 driver.get("https://revenue.kerala.gov.in/")
 time.sleep(3)
